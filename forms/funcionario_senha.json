@@ -1,0 +1,9 @@
+[
+	{	"groupname":"",
+		"data":	[
+					{	"type":"hidden","label":"","name":"id","size":"","maxsize":"100","value":"","required":"no"},
+					{	"type":"password","label":"Senha","name":"senha","size":"","maxsize":"100","value":"","required":"yes"}
+					
+				]
+	}
+]

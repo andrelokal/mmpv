@@ -1,0 +1,16 @@
+[
+	{	"groupname":"",
+		"data":	[
+					{	"type":"hidden","label":"","name":"id","size":"","maxsize":"100","value":"","required":"no"},
+					{	"type":"","label":"Código","name":"codigo","size":"","maxsize":"100","value":"","required":"no","class":"form-control"},					
+					{	"type":"select","label":"Categoria","name":"categoria_id","size":"","maxsize":"100","value":"","required":"yes","class":"form-control"},
+					{	"type":"","label":"Nome","name":"nome","size":"","maxsize":"100","value":"","required":"yes","class":"form-control"},					
+					{	"type":"money","label":"Valor","name":"valor","size":"","maxsize":"","value":"","required":"yes","class":"form-control"},
+					{	"type":"select","label":"Forma Cobrança","name":"unidade_id","size":"","maxsize":"100","value":"","required":"yes","class":"form-control"},
+					{	"type":"","label":"Código de Barra","name":"codbar","size":"","maxsize":"100","value":"","required":"no","class":"form-control" },
+					{	"type":"select","label":"Tem Estoque","name":"tem_estoque","options":[{"text":"Sim","value":"y"},{"text":"Não","value":"n"}],"value":"","required":"yes","class":"form-control" },
+					{	"type":"","label":"Notificar Estoque Mínimo","name":"estoque_min","maxsize":"4","value":"","required":"no","class":"form-control" },
+					{	"type":"textarea","label":"Descrição","name":"descricao","size":"","maxsize":"","value":"","required":"no","class":"form-control"}
+				]
+	}
+]

@@ -1,0 +1,17 @@
+[
+	{	"groupname":"",
+		"data":	[
+					{	"type":"hidden","label":"","name":"id","size":"","maxsize":"100","value":"","required":"no"},
+					{	"type":"select","label":"Tipo","name":"tipo","options":[{"text":"Entrada","value":"E"},{"text":"Saída","value":"S"},{"text":"Acerto Positivo","value":"EX"}],"value":"","required":"yes","class":"form-control" },
+					{	"type":"select","label":"Produto","name":"produto_id","size":"","maxsize":"100","value":"","required":"yes","class":"form-control selectpicker"},					
+					{	"type":"select","label":"Fornecedor","name":"fornecedor_id","size":"","maxsize":"100","value":"","required":"no","class":"form-control entrada"},
+					{	"type":"number","label":"Quantidade","name":"quantidade","size":"","maxsize":"100","value":"","required":"yes","class":"form-control"},
+					{	"type":"","label":"Lote","name":"lote","size":"","maxsize":"100","value":"","required":"no","class":"form-control entrada"},
+					{	"type":"date","label":"Data compra","name":"dt_compra","size":"","maxsize":"100","value":"","required":"yes","class":"form-control datepicker entrada"},
+					{	"type":"dt_validade","label":"Data validade","name":"dt_validade","size":"","maxsize":"100","value":"","required":"yes","class":"form-control datepicker entrada"},
+					{	"type":"money","label":"Valor unitário","name":"valor_unitario","size":"","maxsize":"100","value":"","required":"yes","class":"form-control entrada"},
+					{	"type":"money","label":"Valor total","name":"valor_total","size":"","maxsize":"100","value":"","required":"yes","class":"form-control entrada"},
+					{	"type":"textarea","label":"Motivo Lançamento","name":"motivo_saida","size":"","maxsize":"100","value":"","required":"yes","class":"form-control saida"}
+				]
+	}
+]

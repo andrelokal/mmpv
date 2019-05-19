@@ -1,0 +1,15 @@
+[
+	{	"groupname":"",
+		"data":	[
+					{	"type":"hidden","label":"","name":"tipo","size":"","maxsize":"100","value":"J","required":"no","fixed":"yes"},
+					{	"type":"hidden","label":"","name":"id","size":"","maxsize":"100","value":"","required":"no"},
+					{	"type":"hidden","label":"","name":"pessoa_id","size":"","maxsize":"100","value":"","required":"no"},
+					{	"type":"cnpj","label":"CNPJ","name":"cnpj","size":"","maxsize":"100","value":"","required":"yes","class":"form-control"},					
+					{	"type":"","label":"Nome Fantasia","name":"nome_fantasia","size":"","maxsize":"100","value":"","required":"yes","class":"form-control"},					
+					{	"type":"","label":"Razão Social","name":"razao_social","size":"","maxsize":"100","value":"","required":"yes","class":"form-control"},										
+					{	"type":"","label":"IE","name":"inscricao_estadual","size":"","maxsize":"100","value":"","required":"no","class":"form-control"},					
+					{	"type":"","label":"CCM","name":"ccm","size":"","maxsize":"100","value":"","required":"no","class":"form-control"},
+					{	"type":"email","label":"E-mail","name":"email","size":"","maxsize":"100","value":"","required":"no","class":"form-control"}
+				]
+	}
+]

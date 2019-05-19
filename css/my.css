@@ -1,0 +1,363 @@
+html,body {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  bottom:0;
+  margin: auto;
+  background-size: contain;
+  overflow-y: auto;
+  overflow: auto;
+}
+
+body{
+  background-image: url("../images/background.jpg?6");
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.container {
+  height: 100%;
+  /* overflow: auto; */
+}
+
+/*.row{
+	height: 100%;
+	box-sizing: border-box;
+}
+
+.row > div{
+	height: 100%;
+	box-sizing: border-box;
+}
+
+.panel{
+	height: 80%;
+	box-sizing: border-box;
+}
+
+.panel .panel-body{
+	height: 100%;
+	box-sizing: border-box;
+}
+*/
+
+.df-footer{
+    display: none;
+}
+
+#totalitens{
+  font-weight: bold;
+}
+
+table.dataTable tbody tr.selected {
+    background-color: #acbad4;
+}
+
+.logo_footer{
+  margin-top: 10px;
+}
+
+/*Form*/
+
+.form-group{
+  width: 100%;
+  float: left;
+}
+
+form.thre-columns .form-group{
+  width: 33%;  
+}
+
+form.two-columns .form-group{
+  width: 50%;  
+}
+
+form .form-group.descricao{
+  width: 100%;
+}
+
+form .form-group input,
+form .form-group textarea,
+form .form-group select{
+  width: 90%;
+}
+
+table {
+  background: #fff;
+}
+
+.free{
+  width: 90%;
+  box-sizing: border-box;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+
+.free.total{
+  background: #87C944;
+}
+
+.free.troco{
+  background: #6B9DD6;
+}
+
+.free.off{
+  background: #ECB8F5;
+}
+
+.free.pago{
+  background: #D1DEE3;
+}
+
+.nav.help li{
+  padding: 5px;
+  margin-right: 3px;
+}
+
+.nav.help li kbd{
+  margin-right: 5px;
+}
+
+.nav.help-forma li{
+  font-size: 90%;
+  margin-right: 3px;
+}
+
+.nav.help-forma li kbd{
+  margin-right: 5px;
+}
+
+
+
+.container.login {
+  width: 500px;
+}
+
+form.pagamento .df-group{
+  float: left;
+}
+
+form.pagamento .df-group.pagto.p1{
+  display: none;
+}
+
+form.pagamento .df-group.pagto,
+form.pagamento .df-group.valores{
+  width: 50%;
+}
+
+form.pagamento .df-group.pagto .form-group,
+form.pagamento .df-group.valores .form-group{
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+form.pagamento .df-group.pagto .form-group label{
+  padding-left: 0px;
+}
+
+form.pagamento .df-group.pagto .form-group input{
+  width: 200px;
+}
+
+
+form.pagamento .df-group.display{
+  clear: both;
+}
+
+form.pagamento .groupname{
+  margin-bottom: 15px;
+  height: 30px;
+  border-bottom: solid 1px #ccc; 
+}
+
+
+.resumo-conta-cliente .free{
+  font-size: 18px;
+  margin-bottom: 10px;
+} 
+
+.form-pagar-conta .form-group.fisica_id{
+  clear: both;
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.form-pagar-conta .form-group{
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.modal-md {
+    width: 500px;
+}
+
+span.money{
+  padding: 2px;
+  background: #A0F2A3;
+  border-radius: 5px;
+}
+
+span.warning{
+  padding: 2px;
+  background: yellow;
+  border-radius: 5px;
+}
+
+
+[data-notify="progressbar"] {
+  margin-bottom: 0px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 5px;
+}
+
+.form-inline .form-group{
+  width: auto;
+}
+
+.ct-chart-line .ct-label{
+  font-size: 12px !important;
+}
+
+g .ct-label{
+  font-size: 12px !important;
+}
+.ct-series-a .ct-line {
+  /* Control the thikness of your lines */
+  stroke-width: 2px !important;
+
+}
+
+table.dataTable tbody td {
+    padding: 4px 5px;
+    font-size: 13px;
+}
+
+table.dataTable thead th, table.dataTable thead td {
+    padding: 5px 6px;
+    font-size: 13px;
+    border-bottom: 1px solid #111;
+}
+
+table.dataTable tfoot th, table.dataTable tfoot td {
+    padding: 5px 6px;
+    border-top: 1px solid #111;
+    font-size: 13px;
+    background: #C8EDC0;
+}
+
+.form-inline .form-group{
+  margin-right: 5px;
+}
+
+.list-group.help{
+  margin-bottom: 0px;
+}
+
+.list-group.help .list-group-item{
+  padding: 5px 15px;
+
+}
+
+.list-group.help .list-group-item.sub{
+  background: #EDF9FC;
+  color: #999;
+}
+
+.loading{
+  background-image: url('/images/loading2.gif');
+  background-position: center;
+  width: 13px;
+  height: 13px;
+  padding: 5px;
+}
+
+#cadastro-cliente .form-group{
+  margin-bottom : 5px;
+}
+
+#cadastro-cliente .col-xs-3{
+  padding-right: 0px;
+} 
+
+#cadastro-cliente .col-xs-6{
+  padding-left : 0px;
+}
+
+#cadastro-cliente .col-xs-8{
+  padding-right: 0px;
+}
+
+#cadastro-cliente .input-sm{
+  height: 25px;
+}
+
+#cadastro-cliente .form-group input, #cadastro-cliente .form-group textarea, #cadastro-cliente .form-group select{
+  width: 100%;
+  padding: 4px 8px ;
+}
+
+#cadastro-cliente .form-group textarea{
+  overflow-x: hidden;
+  font-size: 13px;
+}
+
+.nav.options-delivery>li>a{
+  padding: 4px 4px;
+}
+
+#cadastro-cliente .form-control.radio{
+  height: auto;
+  width: auto;
+  float: left;
+  margin-right: 5px;
+}
+
+#produto{
+  text-transform: uppercase;
+}
+#fechamento-caixa hr{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#displayPizza .description{
+  font-size: 12px;
+}
+
+.kt-arrow{
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;    
+  position: absolute;
+  right: 0px;
+}
+
+.kt-arrow.inative{
+  opacity: 0.2;
+}
+
+.kt-arrow.up{
+  background: url( "/images/Arrows-Up-icon.png" );
+  top: -30px;
+}
+
+.kt-arrow.down{
+  background: url( "/images/Arrows-Down-icon.png" );
+  bottom: -6px;
+
+}
+
+.nav.bond>li{
+  padding-left: 10px;
+}

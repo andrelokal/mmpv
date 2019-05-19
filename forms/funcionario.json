@@ -1,0 +1,13 @@
+[
+	{	"groupname":"",
+		"data":	[
+					{	"type":"select","label":"Tipo","name":"tipo_us","required":"yes","options":[{"value":"","text":""},{"value":"M","text":"Administrador"},{"value":"N","text":"Normal"}],"class":"form-control"},
+					{	"type":"hidden","label":"","name":"id","size":"","maxsize":"100","value":"","required":"no"},
+					{	"type":"hidden","label":"","name":"pessoa_id","size":"","maxsize":"100","value":"","required":"no"},
+					{	"type":"","label":"Login","name":"login","size":"","maxsize":"100","value":"","required":"yes"},					
+					{	"type":"","label":"Nome","name":"nome","size":"","maxsize":"100","value":"","required":"yes","class":"form-control"},					
+					{	"type":"email","label":"E-mail","name":"email","size":"","maxsize":"100","value":"","required":"yes","class":"form-control"}
+					
+				]
+	}
+]

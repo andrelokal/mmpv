@@ -1,0 +1,14 @@
+[
+	{	"groupname":"",
+		"data":	[
+					{	"type":"hidden","label":"","name":"id","size":"","maxsize":"100","value":"","required":"yes","class":"form-control input-lg"},
+					{	"type":"hidden","label":"","name":"codigo"},
+					{	"type":"hidden","name":"categoria_id"},
+					{	"type":"hidden","label":"","name":"unidade_id","required":"no","class":""},
+					{	"type":"","label":"Produto","name":"nome","size":"","maxsize":"100","value":"","required":"no","readonly":"yes","class":"form-control input-lg"},
+					{	"type":"number","label":"Quantidade","name":"quantidade","size":"3","maxsize":"3","value":"1","required":"yes","fixed":"true","class":"form-control input-lg" },
+					{	"type":"","label":"Valor Produto","name":"valor","size":"","maxsize":"100","value":"","required":"no","readonly":"yes","class":"form-control input-lg"},
+					{	"type":"money","label":"Valor Item","name":"valoritem","size":"","maxsize":"100","value":"","required":"no","readonly":"yes","class":"form-control input-lg"}
+				]
+	}
+]

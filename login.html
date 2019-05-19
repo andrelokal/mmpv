@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  @include includes/head.html
+  <body>
+    <div class="container login container-fluid" >
+      <div class="clearfix">&nbsp;</div>
+          
+      <div class="panel panel-default">
+        <div class="panel-heading">Autenticação do Sistema</div>
+        <div class="panel-body">
+            <form id='formlogin' action='auth'>
+              <div class="form-group">
+                <label for="Login">Login / E-mail</label>
+                <input class="form-control" id="login" name='login' placeholder="Login" required="required">
+              </div>
+              <div class="form-group mode-login">
+                <label for="password">Senha</label>
+                <input type="password" class="form-control" name='password' id="password" placeholder="Senha" required="required">
+              </div>
+              <p>
+                <button type="submit" class="btn btn-default">Entrar</button>
+              </p>
+              <p class="mode-login">
+                Caso tenha esquecido sua senha <a href='#' class="ahref link-forget">clique aqui</a>
+              </p>
+              <p class="mode-forget" style="display: none">
+                Fazer login <a href='#' class="ahref link-login">clique aqui</a>
+              </p>
+            </form>
+        </div>
+      </div>
+
+    </div>
+
+    @include includes/scripts.html
+
+    <script type="text/javascript">
+        $(function(){
+
+
+          var formElement = $('#formlogin');
+          //formElement.attr('action','');
+          CallForm( null , formElement, function(){
+            //            
+          }, function(){
+
+            var login = new $PHP('login');
+            login.loaded = function(){
+
+              switch( formElement.attr('action') ){
+
+                case 'auth':
+                    
+                    login.call('auth',[$('#login').val(),$('#password').val()],function( ret ){
+                      if(ret.success){
+                        
+                        localStorage.setItem('auth', JSON.stringify(login.data))
+                        AlertMessage( formElement, 'success', 'Sucesso!', ret.message, 2000 );
+                        setTimeout(function(){
+                          location.href = '/';
+                        },2000)
+
+                      } else {
+
+                        AlertMessage( formElement, 'danger', 'Atenção!', ret.message, 3000 )
+
+                      }
+                    })                 
+
+
+                  break;
+
+                case 'forget':
+
+                    login.call('forget',[$('#login').val()],function( ret ){
+                      if(ret.success){
+                        
+                        localStorage.setItem('auth', JSON.stringify(login.data))
+                        AlertMessage( formElement, 'success', 'Sucesso!', ret.message );
+
+                      } else {
+
+                        AlertMessage( formElement, 'danger', 'Atenção!', ret.message, 3000 )
+
+                      }
+                    })  
+
+                  break;
+
+              }
+
+            };
+
+            
+
+          })
+
+
+          $('.link-forget').click(function(){
+
+            $(".mode-login").hide();
+            $(".mode-forget").show();
+
+            $("#password").removeAttr('required')
+            $('#formlogin').attr('action','forget')
+            $('button[type=submit]').html('Enviar')
+
+            return false;
+          })
+
+          $('.link-login').click(function(){
+
+            $(".mode-login").show();
+            $(".mode-forget").hide();
+
+            $("#password").attr('required','required')
+            $('#formlogin').attr('action','auth')
+            $('button[type=submit]').html('Entrar')
+
+            return false;
+          })
+
+
+        })
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+[
+	{	"groupname":"Formas de Pagamento",
+		"groupclass":"pagto p2",
+		"data":	[
+					{	"type":"select","label":"","name":"formaID","size":"","maxsize":"100","value":"0","required":"yes","class":"form-control input-lg"}	,
+					{	"type":"money","label":"Valor pago","name":"vlr_pago","size":"","maxsize":"100","value":"0","required":"yes","class":"form-control focus-select-range input-lg"}				
+				]
+	},
+	{	"groupname":"Fracionar Pagamento",
+		"groupclass":"pagto p1",
+		"data":	[
+					{	"type":"free","name":"fracionado"}					
+				]
+	},
+
+	{	"groupname":"Valores",
+		"groupclass":"valores",
+		"data":	[
+					{	"type":"free","label":"","name":"vlr_pago_text","size":"","maxsize":"100","value":"0","required":"no","class":"free pago","fixed":"yes"},
+					{	"type":"number","label":"Desconto(%)","name":"desconto","size":"","maxsize":"50","value":"0","required":"yes","class":"form-control input-lg focused focus-select-range","fixed":"yes" }					
+				]
+	}, 
+
+	{	"groupname":"",
+		"groupclass":"display",
+		"data":	[
+					{	"type":"free","label":"Valor Compra","name":"total","size":"","maxsize":"100","value":"","required":"no","readonly":"yes","class":"free total"},
+					{	"type":"free","label":"Troco","name":"troco","size":"","maxsize":"100","value":"0","required":"no","class":"free troco","fixed":"yes"},
+					{	"type":"free","label":"Economize","name":"off","size":"","maxsize":"100","value":"0","required":"no","class":"free off","fixed":"yes"},
+					{	"type":"hidden","name":"status","size":"","maxsize":"50","value":"A","required":"","class":"form-control" }
+				]
+	}
+]

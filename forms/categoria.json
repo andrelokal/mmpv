@@ -1,0 +1,7 @@
+[
+	{	"groupname":"",
+		"data":	[
+					{	"type":"hidden","label":"","name":"id","size":"","maxsize":"100","value":"","required":"no"},
+					{	"type":"","label":"Nome","name":"nome","size":"","maxsize":"100","value":"","required":"yes","class":"form-control"}				]
+	}
+]

@@ -1,0 +1,16 @@
+[
+	{	"groupname":"",
+		"data":	[
+					{	"type":"hidden","label":"","name":"tipo","size":"","maxsize":"100","value":"F","required":"no","fixed":"yes"},
+					{	"type":"hidden","label":"","name":"id","size":"","maxsize":"100","value":"","required":"no"},
+					{	"type":"hidden","label":"","name":"pessoa_id","size":"","maxsize":"100","value":"","required":"no"},
+					{	"type":"cpf","label":"CPF","name":"cpf","size":"","maxsize":"100","value":"","required":"yes","class":"form-control"},					
+					{	"type":"","label":"Nome","name":"nome","size":"","maxsize":"100","value":"","required":"yes","class":"form-control"},					
+					{	"type":"email","label":"E-mail","name":"email","size":"","maxsize":"100","value":"","required":"yes","class":"form-control"},
+					{	"type":"telefone","label":"Telefone","name":"telefone","size":"","maxsize":"100","value":"","required":"yes","class":"form-control"},
+					{	"type":"select","label":"Tem Conta","name":"tem_conta","required":"yes","options":[{"value":"","text":""},{"value":"y","text":"Sim"},{"value":"n","text":"Não"}],"class":"form-control"},
+					{	"type":"money","label":"Limite de Crédito","name":"limite_conta","value":"","required":"no","class":"form-control"},
+					{	"type":"","label":"Dia Vencimento","name":"dia_mes_pagto","value":"5","fixed":"yes","required":"no","class":"form-control"}
+				]
+	}
+]

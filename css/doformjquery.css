@@ -1,0 +1,160 @@
+form{
+	clear: both;
+}
+
+.df-group{
+	padding: 10px;
+	/*margin: 10px;*/
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	display: table;
+	width: 100%;
+	margin: auto;
+	/*background-color: #F2F7F9;*/
+	margin-bottom: 5px;
+	/*border: solid 1px #8D99AE;*/
+	box-sizing: border-box;
+}
+
+.df-group .groupname{
+	font-size: 18px;
+}
+
+.df-group .df-input{
+	padding: 5px;
+	float: left;
+	display: none;
+	position: relative;
+}
+
+.df-group .df-input:last-child{
+	clear: both;
+}
+
+.df-group  input,
+.df-group  select,
+.df-group  textarea{
+	padding: 5px;
+	border: solid 1px #8D99AE;
+	display: block;
+	clear: both;
+}
+
+.df-group  input,
+.df-group  textarea{
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.df-group  select{
+	min-width: 200px;
+}
+
+.df-group .df-input *:focus{
+	outline: none;
+}
+
+.df-group .df-input *:focus::-webkit-input-placeholder {
+	color: transparent;
+}
+
+.df-group .df-input textarea{
+	width: 350px;
+	height: 100px;
+}
+
+.df-group .df-input label{
+	color: #8D99AE;
+	display: block;
+	margin-bottom: 10px; 
+	clear: both;
+	font-size: 15px;
+}
+
+.df-group .df-input .df-error{
+	border-color: #FFA69E;
+}
+
+.df-footer{
+	/*clear: both;*/
+	padding-top: 20px;
+}
+
+.df-footer input{
+	border: none;
+	color: white;
+	float: left;
+}
+
+.df-footer input.df-submit{
+	background-color: #00A8E8;
+}
+
+
+.df-footer input.df-reset{
+	background-color: #EF233C;
+}
+
+.df-footer input.df-new{
+	background-color: #9BC53D;
+}
+
+.df-footer input.df-edit{
+	background-color: #525174;
+}
+
+
+
+.df-group.df-footer .df-input{
+	padding: 10px;
+}
+
+.df-group.df-footer .df-input input{
+	padding: 15px;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+
+.ui-dialog{
+	z-index: 2000 !important;
+}
+
+.df-group ul{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+.df-group .multi-checkbox{
+	width: 100%;
+}
+
+.df-group .multi-checkbox ul li{
+	float: left;
+	width: 25%;
+}
+
+.df-group .multi-checkbox ul li input,
+.df-group .multi-radio ul li input{
+	display: inline;
+}
+
+form[mode=view] .df-input input:not(.df-btn){
+	pointer-events: none;
+	border: none;
+}
+
+.df-alert-error {
+	padding: 4px 0px 0px 4px;
+	color: red;
+	position: absolute;
+}
+
+
+
+
+
+

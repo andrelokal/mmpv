@@ -1,0 +1,11 @@
+[
+	{	"groupname":"",
+		"data":	[
+					{	"type":"select","label":"Cliente","name":"fisica_id","size":"","maxsize":"100","value":"","required":"yes","class":"form-control selectpicker"},
+					{	"type":"number","label":"Desconto","name":"desconto","size":"","maxsize":"100","value":"","required":"no","class":"form-control"},
+					{	"type":"select","label":"Forma","name":"forma_pagto_id","size":"","maxsize":"100","value":"0","required":"yes","class":"form-control"},
+					{	"type":"money","label":"Valor","name":"valor","size":"","maxsize":"100","value":"","required":"yes","class":"form-control last"},
+					{	"type":"free","label":"Valor","name":"fracionado","class":""}
+				]
+	}
+]

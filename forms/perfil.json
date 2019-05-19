@@ -1,0 +1,8 @@
+[
+	{	"groupname":"",
+		"data":	[
+					{"type":"","label":"Nome Empresa","name":"nome_empresa","size":"","maxsize":"50","value":"","required":"yes","class":"form-control"},
+					{"type":"textarea","label":"Descrição Cupom","name":"desc_cumpom","size":"","maxsize":"250","value":"","required":"no","class":"form-control"}
+				]
+	}
+]
